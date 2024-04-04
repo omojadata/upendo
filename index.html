@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="start-screen">
+        <h1 class="heading">Lugha ya Upendo</h1>
+          <p class="detail" >Sisi sote tunataka kujisikia kupendwa. Lakini, tunapokea upendo kwa njia tofauti.
+             Labda mapenzi ya mwili na wakati mzuri hubeba maana zaidi kwako. Wakati mpenzi wako anatamani kusikia
+              maneno hayo ya upendo na kujali. Hizi hapa ni Lugha 5 za Upendo </p>
+                <div class="settings">
+                 <h3 class="headingdetail" > MANENO YA UTHIBITISHO / WORDS OF AFFIRMATION</h3>
+                  <p class="detail" >Kusikia maneno hayo muhimu ya upendo na shukrani.</p>
+                  <h3 class="headingdetail" > KUGUSWA MWILI / PHYSICAL TOUCH</h3>
+                  <p class="detail" > Mapenzi ya kimwili, mguso, ngono, kukumbatiana, kubembeleza - kuhisi mapenzi kupitia muunganisho wa ngozi hadi ngozi.</p>
+                  <h3 class="headingdetail" > MUDAA WAKO / QUALITY TIME</h3>
+                  <p class="detail" > Kutumia muda mwingi tukiwa pekee tu .</p>
+                  <h3 class="headingdetail" > MATENDO YA HUDUMA / ACTS OF SERVICE </h3>
+                  <p class="detail" > Kukuisaidia na kazi zako, kukuchukua kutoka kwa madaktari, kukutengenezea kahawa asubuhi, kuonyesha upendo kupitia vitendo.</p>
+                  <h3 class="headingdetail" > KUPOKEA ZAWADI / RECEIVING GIFTS </h3>
+                  <p class="detail" >
+                    Yote ni juu ya mawazo nyuma ya zawadi, sio tag ya bei..</p>
+      
+            <button class="btn start">Start Quiz</button>
+        </div>
+        
+      </div>
+      <div class="quiz hide">
+        <!-- <div class="timer">
+          <div class="progress">
+            <div class="progress-bar"></div>
+            <span class="progress-text"></span>
+          </div>
+        </div> -->
+        <div class="question-wrapper">
+          <div class="number">
+            Question <span class="current">1</span>
+            <span class="total">/10</span>
+          </div>
+          <div class="question">This is a question This is a question?</div>
+        </div>
+        <div class="answer-wrapper">
+          <div class="answer selected">
+            <span class="text">answer</span>
+            <span class="checkbox">
+              <i class="fas fa-check"></i>
+            </span>
+          </div>
+        </div>
+        <button class="btn submit" disabled>Submit</button>
+        <button class="btn next">Next</button>
+      </div>
+      <div class="end-screen hide">
+        <h1 class="heading">Quiz App</h1>
+        <div class="score">
+          <span class="score-text">Your score:</span>
+          <div>
+            <span class="final-score">0</span>
+            <span class="total-score">/10</span>
+          </div>
+        </div>
+        <button class="btn restart">Restart Quiz</button>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
