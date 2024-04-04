@@ -29,7 +29,14 @@ body {
   font-size: 30px;
   color: #fff;
 }
+
 .detail {
+  text-align: center;
+  font-size: 14px;
+  color: #e0e0e0;
+  margin-bottom: 10px;
+}
+.final-score {
   text-align: center;
   font-size: 14px;
   color: #fff;
@@ -37,8 +44,15 @@ body {
 }
 .headingdetail {
   text-align: center;
-  font-size: 18px;
+  font-size: 14px;
   color: #fff;
+  margin-bottom: 10px;
+}
+.total-score {
+  text-align: center;
+  font-size: 14px;
+  color: #e0e0e0;
+  margin-bottom: 10px;
 }
 label {
   display: block;

@@ -1,18 +1,4 @@
-// const  progressBr = document.querySelector(".timer"),
-//  progressBar = document.querySelector(".progress-bar"),
-//   progressText = document.querySelector(".progress-text");
-
-// const progress = (value) => {
-//   const percentage = (value / time) * 100;
-//   progressBar.style.width = `${percentage}%`;
-//   progressText.innerHTML = `${value}`;
-// };
-
 const startBtn = document.querySelector(".start"),
-  numQuestions = document.querySelector("#num-questions"),
-  category = document.querySelector("#category"),
-  difficulty = document.querySelector("#difficulty"),
-  timePerQuestion = document.querySelector("#time"),
   quiz = document.querySelector(".quiz"),
   startScreen = document.querySelector(".start-screen");
 
@@ -20,6 +6,13 @@ let questions = [],
   time = 30,
   score = 0,
   currentQuestion,
+  pointA =0,
+  pointB=0,
+  pointC=0,
+  pointD=0,
+  pointE=0,
+  comment,
+  head,
   timer;
 
 
@@ -364,9 +357,9 @@ let questions = [],
     ]
 
 const startQuiz = () => {
-  const num = numQuestions.value,
-    cat = category.value,
-    diff = difficulty.value;
+  // const num = numQuestions.value,
+  //   cat = category.value,
+  //   diff = difficulty.value;
   loadingAnimation();
   setTimeout(() => {
     startScreen.classList.add("hide");
@@ -395,7 +388,7 @@ const showQuestion = (question) => {
 
   answersWrapper.innerHTML = "";
   answers.forEach((answer) => {
-    console.log( "stshga"+ answer)
+    // console.log( "stshga"+ answer)
     answersWrapper.innerHTML += `
                   <div class="answer ">
             <span class="text">${answer}</span>
@@ -436,25 +429,25 @@ const loadingAnimation = () => {
   }, 500);
 };
 
-function defineProperty() {
-  var osccred = document.createElement("div");
-  osccred.innerHTML =
-    "A Project By <a href='https://www.youtube.com/@opensourcecoding' target=_blank>Open Source Coding</a>";
-  osccred.style.position = "absolute";
-  osccred.style.bottom = "0";
-  osccred.style.right = "0";
-  osccred.style.fontSize = "10px";
-  osccred.style.color = "#ccc";
-  osccred.style.fontFamily = "sans-serif";
-  osccred.style.padding = "5px";
-  osccred.style.background = "#fff";
-  osccred.style.borderTopLeftRadius = "5px";
-  osccred.style.borderBottomRightRadius = "5px";
-  osccred.style.boxShadow = "0 0 5px #ccc";
-  document.body.appendChild(osccred);
-}
+// function defineProperty() {
+//   var osccred = document.createElement("div");
+//   osccred.innerHTML =
+//     "A Project By <a href='https://www.youtube.com/@opensourcecoding' target=_blank>Open Source Coding</a>";
+//   osccred.style.position = "absolute";
+//   osccred.style.bottom = "0";
+//   osccred.style.right = "0";
+//   osccred.style.fontSize = "10px";
+//   osccred.style.color = "#ccc";
+//   osccred.style.fontFamily = "sans-serif";
+//   osccred.style.padding = "5px";
+//   osccred.style.background = "#fff";
+//   osccred.style.borderTopLeftRadius = "5px";
+//   osccred.style.borderBottomRightRadius = "5px";
+//   osccred.style.boxShadow = "0 0 5px #ccc";
+//   document.body.appendChild(osccred);
+// }
 
-defineProperty();
+// defineProperty();
 
 const submitBtn = document.querySelector(".submit"),
   nextBtn = document.querySelector(".next");
@@ -478,40 +471,20 @@ const checkAnswer = () => {
     const answer = selectedAnswer.querySelector(".text").innerHTML;
     console.log(currentQuestion);
     // console.log(questions[currentQuestion - 1]);
-
     var indexPoints=questions[currentQuestion - 1].answers.indexOf(answer)
     var point = questions[currentQuestion - 1].points[indexPoints]
-    // console.log(point)
-    if (answer === questions[currentQuestion - 1].correct_answer) {
-      // score++;
-      // selectedAnswer.classList.add("correct");
-
-    } else {
-      // selectedAnswer.classList.add("wrong");
-      // const correctAnswer = document
-      //   .querySelectorAll(".answer")
-      //   .forEach((answer) => {
-      //     if (
-      //       answer.querySelector(".text").innerHTML ===
-      //       questions[currentQuestion - 1].correct_answer
-      //     ) {
-      //       answer.classList.add("correct");
-      //     }
-      //   });
-
+    if(point=="A"){
+      pointA++
+    }else if(point=="B"){
+      pointB++
+    }else if(point=="C"){
+      pointC++
+    }else if(point=="D"){
+      pointD++
+    }else if(point=="E"){
+      pointE++
     }
-  } else {
-    const correctAnswer = document
-      // .querySelectorAll(".answer")
-      // .forEach((answer) => {
-      //   if (
-      //     answer.querySelector(".text").innerHTML ===
-      //     questions[currentQuestion - 1].correct_answer
-      //   ) {
-      //     answer.classList.add("correct");
-      //   }
-      // });
-  }
+  } 
   const answersDiv = document.querySelectorAll(".answer");
   answersDiv.forEach((answer) => {
     answer.classList.add("checked");
@@ -537,13 +510,45 @@ const endScreen = document.querySelector(".end-screen"),
 const showScore = () => {
   endScreen.classList.remove("hide");
   quiz.classList.add("hide");
-  finalScore.innerHTML = score;
-  totalScore.innerHTML = `/ ${questions.length}`;
+
+  var data= Math.max(pointA,pointB,pointC,pointD,pointE)
+
+  finalScore.innerHTML = data;
+  // <h3 class="headingdetail" > MANENO YA UTHIBITISHO / WORDS OF AFFIRMATION</h3>
+  // <!-- <p class="detail" >Kusikia maneno hayo muhimu ya upendo na shukrani.</p> -->
+  // <h3 class="headingdetail" > KUGUSWA MWILI / PHYSICAL TOUCH</h3>
+  // <!-- <p class="detail" > Mapenzi ya kimwili, mguso, ngono, kukumbatiana, kubembeleza - kuhisi mapenzi kupitia muunganisho wa ngozi hadi ngozi.</p> -->
+  // <h3 class="headingdetail" > MUDAA WAKO / QUALITY TIME</h3>
+  // <!-- <p class="detail" > Kutumia muda mwingi tukiwa pekee tu .</p> -->
+  // <h3 class="headingdetail" > MATENDO YA HUDUMA / ACTS OF SERVICE </h3>
+  // <!-- <p class="detail" > Kukuisaidia na kazi zako, kukuchukua kutoka kwa madaktari, kukutengenezea kahawa asubuhi, kuonyesha upendo kupitia vitendo.</p> -->
+  // <h3 class="headingdetail" > KUPOKEA ZAWADI / RECEIVING GIFTS </h3>
+  // <!-- <p class="detail" > Mapenzi ya kupewa zawadi, haijalishi bei.</p> -->
+  // <button class="btn start">Anza Kipimo</button>
+  if(pointA==data){
+    head= "MANENO YA UTHIBITISHO / WORDS OF AFFIRMATION"
+    comment="Kusikia maneno hayo muhimu ya upendo na shukrani."
+  }else if(pointE==data){
+    head= "KUGUSWA MWILI / PHYSICAL TOUCH"
+    comment=" Mapenzi ya kimwili, mguso, ngono, kukumbatiana, kubembeleza - kuhisi mapenzi kupitia muunganisho wa ngozi hadi ngozi."
+  }else if(pointB==data){
+    head= "MUDAA WAKO / QUALITY TIME"
+    comment="Kutumia muda mwingi tukiwa pekee tu."
+  }else if(pointD==data){
+    head= "MATENDO YA HUDUMA / ACTS OF SERVICE"
+    comment="Kukuisaidia na kazi zako, kukuchukua kutoka kwa madaktari, kukutengenezea kahawa asubuhi, kuonyesha upendo kupitia vitendo."
+  }else if(pointC==data){
+    head= "KUPOKEA ZAWADI / RECEIVING GIFTS"
+    comment="Mapenzi ya kupewa zawadi, haijalishi bei."
+  } 
+
+  finalScore.innerHTML = head;
+  totalScore.innerHTML = comment;
 };
 
 const restartBtn = document.querySelector(".restart");
 restartBtn.addEventListener("click", () => {
-  // window.location.reload();
+  window.location.reload();
 });
 
 // const playAdudio = (src) => {
