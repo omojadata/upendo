@@ -493,6 +493,12 @@ const checkAnswer = () => {
   submitBtn.style.display = "none";
   nextBtn.style.display = "block";
 };
+async function paymentPage() {
+  const nowz = Date.now()
+  const response = await fetch('https://x8ki-letl-twmt.n7.xano.io/api:WvHB3mH5/payment/'+nowz);
+  const info = await response.response.result;
+  window.location.replace(info);
+}
 const showScore = () => {
   // endScreen.classList.remove("hide");
   // quiz.classList.add("hide");
@@ -514,11 +520,11 @@ const showScore = () => {
     head= "KUPOKEA ZAWADI / RECEIVING GIFTS"
     comment="Mapenzi ya kupewa zawadi, haijalishi bei."
   } 
-
   window.localStorage.setItem("head",head)
   window.localStorage.setItem("comment",comment)
-  window.location.replace("https://upendo.netlify.app/tokeo.html");
+  logMovies();
 };
+
 const nextQuestion = () => {
   if (currentQuestion < questions.length) {
     currentQuestion++;
