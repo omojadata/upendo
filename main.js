@@ -499,7 +499,7 @@ async function paymentPage() {
   const info = await response.response.result;
   window.location.replace(info);
 }
-const showScore = () => {
+const showScore = ()  => {
   // endScreen.classList.remove("hide");
   // quiz.classList.add("hide");
   var data= Math.max(pointA,pointB,pointC,pointD,pointE)
@@ -522,7 +522,7 @@ const showScore = () => {
   } 
   window.localStorage.setItem("head",head)
   window.localStorage.setItem("comment",comment)
-  logMovies();
+  paymentPage();
 };
 
 const nextQuestion = () => {
