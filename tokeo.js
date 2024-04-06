@@ -9,7 +9,7 @@ console.log(totalScore)
 const restartBtn = document.querySelector(".restart");
 restartBtn.addEventListener("click", () => {
   window.location.reload();
-
+  window.location.replace("https://upendo.netlify.app");
 });
 
 // const playAdudio = (src) => {
