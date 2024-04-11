@@ -18,342 +18,119 @@ let questions = [],
 
   questions = [
     {
-    "question": "Kati ya chaguo hizo mbili, chagua chaguo unalopendelea zaidi na inakufaa vyema kwa sasa.",
+    "question": "Una amini Mungu",
     "answers": [
-    "Napenda kupokea ujumbe wa upendo",
-    "Napenda kukumbatiwa"
+    "Ndio",
+    "Hapana"
     ],
     "points": [
-      "A",
-      "E"
+      10,
+     -10
       ],
     },
     {
-      "question": "Kati ya chaguo hizo mbili, chagua chaguo unalopendelea zaidi na inakufaa vyema kwa sasa.",
+      "question": "Una watoto?",
             "answers": [
-      "Ninapenda kutumia mda wangu na watu walio karibu nami",
-      "Ninahisi kupendwa wakati mtu ananipa msaada wa vitendo."
+      "Ndio",
+      "Hapana"
       ],
       "points": [
-        "B",
-        "D"
+        10,
+        -10
         ],
       },
       {
-        "question": "Kati ya chaguo hizo mbili, chagua chaguo unalopendelea zaidi na inakufaa vyema kwa sasa.",
+        "question": "Una kazi au umejiajiri.",
         "answers": [
-        "Ninapenda wakati watu wakinipa zawadi.",
-        "Ninapenda kutembelewa kwa burudani na marafiki na wapendwa."
+        "Ndio",
+        "Hapana"
         ],
         "points": [
-          "C",
-          "B"
+          10,
+          -10
           ],
         },
         {
-          "question": "Kati ya chaguo hizo mbili, chagua chaguo unalopendelea zaidi na inakufaa vyema kwa sasa.",
+          "question": "Una Umri gani",
           "answers": [
-          "Ninahisi kupendwa watu wanapofanya mambo ya kunisaidia",
-          "Ninahisi kupendwa wakati watu wananigusa."
+          "18-21",
+          "22-24",
+          "25-27",
+          "28-30",
+          "31-35",
+          "36-45",
+          "45 na kwendelea",
           ],
           "points": [
-            "D",
-            "E"
+            20,
+            16,
+            12,
+            9,
+            7,
+            5,
+            1
             ],
           },
           {
-            "question": "Kati ya chaguo hizo mbili, chagua chaguo unalopendelea zaidi na inakufaa vyema kwa sasa.",
+            "question": "Unaishije?.",
             "answers": [
-            "Ninahisi kupendwa wakati mtu ninayempenda au anayemvutia ananikumbatia.",
-            "Ninahisi kupendwa ninapopokea zawadi kutoka kwa mtu ninayempenda au ninayevutiwa nae."
+            "Nahishi kwa Wazazi.",
+            "Nimemepanga hostel.",
+            "Nimepanga chumba.",
+            "Nimepanga vyumba.",
+            "Nimepanga nyumba.",
             ],
             "points": [
-              "E",
-              "C"
+              2,
+              5,
+              10,
+              15,
+              20
               ],
             },
             {
-              "question": "Kati ya chaguo hizo mbili, chagua chaguo unalopendelea zaidi na inakufaa vyema kwa sasa.",
+              "question": "Je unaulemavu wa kudumu",
               "answers": [
-              "Ninapenda kwenda mahali na marafiki na wapendwa.",
-              "Ninapenda kushikana mikono(mfano. Tukitembea) na watu ambao ni maalum kwangu."
+              "Ndio",
+              "Hapana"
               ],
               "points": [
-                "B",
-                "E"
+                10,
+                -10
                 ],
               },
               {
-                "question": "Kati ya chaguo hizo mbili, chagua chaguo unalopendelea zaidi na inakufaa vyema kwa sasa.",
+                "question": "Je, wewe ni mtu maarufu?.",
                 "answers": [
-                "Alama zinazoonekana za upendo (zawadi) ni muhimu sana kwangu.",
-                "Ninahisi kupendwa wakati watu wananithibitisha kuwa wananipenda."
+                "Ndio.",
+                "Hapana."
                 ],
                 "points": [
-                  "C",
-                  "E"
+                  10,
+                  0
                   ],
                 },
                 {
-                  "question": "Kati ya chaguo hizo mbili, chagua chaguo unalopendelea zaidi na inakufaa vyema kwa sasa.",
+                  "question": "Elimu yako ya juu ni?",
                   "answers": [
-                  "Ninapenda kukaa au kusimama karibu na watu ambao ninafurahia kuwa nao",
-                  "Napenda watu waniambie mimi ni mrembo."
+                  "Primary",
+                  "Secondary",
+                  "Certificate",
+                  "Diploma",
+                  "Degree",
+                  "Zaidi ya degree",
                   ],
                   "points": [
-                    "E",
-                    "A"
+                    1,
+                    2,
+                    3,
+                    5,
+                    6,
+                    10,
+                    10
                     ],
                   },
-                  {
-                    "question": "Kati ya chaguo hizo mbili, chagua chaguo unalopendelea zaidi na inakufaa vyema kwa sasa.",
-                    "answers": [
-                    "Ninapenda kutumia wakati na marafiki na wapendwa.",
-                    "Ninapenda kupokea zawadi kutoka kwa marafiki na wapendwa."
-                    ],
-                    "points": [
-                      "B",
-                      "C"
-                      ],
-                    },
-                    {
-                      "question": "Kati ya chaguo hizo mbili, chagua chaguo unalopendelea zaidi na inakufaa vyema kwa sasa.",
-                      "answers": [
-                      "Maneno ya kunikubali ni muhimu kwangu.",
-                      "Najua mtu ananipenda anaponisaidia."
-                      ],
-                      "points": [
-                        "A",
-                        "D"
-                        ],
-                      },
-                      {
-                        "question": "Kati ya chaguo hizo mbili, chagua chaguo unalopendelea zaidi na inakufaa vyema kwa sasa.",
-                        "answers": [
-                        "Ninapenda kuwa pamoja na kufanya mambo na marafiki na wapendwa.",
-                        "Ninapenda maneno mazuri yanaposemwa kwangu."
-                        ],
-                        "points": [
-                          "B",
-                          "A"
-                          ],
-                        },
-
-                        {
-                          "question": "Kati ya chaguo hizo mbili, chagua chaguo unalopendelea zaidi na inakufaa vyema kwa sasa.",
-                          "answers": [
-                          "Anachofanya mtu kinaniathiri zaidi kuliko anachosema.",
-                          "Kukumbatia hunifanya nijihisi niwakaribu na kuthaminiwa."
-                          ],
-                          "points": [
-                            "D",
-                            "E"
-                            ],
-                          },
-
-                          {
-                            "question": "Kati ya chaguo hizo mbili, chagua chaguo unalopendelea zaidi na inakufaa vyema kwa sasa.",
-                            "answers": [
-                            "Ninathamini sifa na ninajaribu kuepuka kukosolewa.",
-                            "Zawadi kadhaa ndogo zinamaanisha zaidi kwangu kuliko zawadi moja kubwa."
-                            ],
-                            "points": [
-                              "A",
-                              "C"
-                              ],
-                            },
-                            {
-                              "question": "Kati ya chaguo hizo mbili, chagua chaguo unalopendelea zaidi na inakufaa vyema kwa sasa.",
-                              "answers": [
-                              "Ninahisi kuwa karibu na mtu tunapozungumza au kufanya jambo pamoja.",
-                              "Ninahisi kuwa karibu na marafiki na wapendwa wanaponigusa mara kwa mara."
-                              ],
-                              "points": [
-                                "B",
-                                "E"
-                                ],
-                              },
-                              {
-                                "question": "Kati ya chaguo hizo mbili, chagua chaguo unalopendelea zaidi na inakufaa vyema kwa sasa.",
-                                "answers": [
-                                "Ninapenda watu kupongeza mafanikio yangu.",
-                                "Najua watu wananipenda wanaponifanyia mambo ambayo hawafurahii kuyafanya."
-                                ],
-                                "points": [
-                                  "A",
-                                  "D"
-                                  ],
-                                },
-                                // {
-                                //   "question": "Kati ya chaguo hizo mbili, chagua chaguo unalopendelea zaidi na inakufaa vyema kwa sasa.",
-                                //   "answers": [
-                                //   "Ninapenda kuguswa marafiki na wapendwa wanapopita.",
-                                //   "Ninapenda wakati watu wananisikiliza na kuonyesha kupendezwa kikweli na kile ninachosema."
-                                //   ],
-                                //   "points": [
-                                //     "E",
-                                //     "B"
-                                //     ],
-                                //   },
-                                //   {
-                                //     "question": "Kati ya chaguo hizo mbili, chagua chaguo unalopendelea zaidi na inakufaa vyema kwa sasa.",
-                                //     "answers": [
-                                //     "Ninahisi kupendwa wakati marafiki na wapendwa wananisaidia na kazi au miradi..",
-                                //     "Ninafurahia sana kupokea zawadi kutoka kwa marafiki na wapendwa."
-                                //     ],
-                                //     "points": [
-                                //       "D",
-                                //       "C"
-                                //       ],
-                                //     },
-                                //     {
-                                //       "question": "Kati ya chaguo hizo mbili, chagua chaguo unalopendelea zaidi na inakufaa vyema kwa sasa.",
-                                //       "answers": [
-                                //       "Ninapenda watu kupongeza sura yangu.",
-                                //       "Ninahisi kupendwa watu wanapochukua muda kuelewa hisia zangu."
-                                //       ],
-                                //       "points": [
-                                //         "A",
-                                //         "B"
-                                //         ],
-                                //       },
-                                //       {
-                                //         "question": "Kati ya chaguo hizo mbili, chagua chaguo unalopendelea zaidi na inakufaa vyema kwa sasa.",
-                                //         "answers": [
-                                //         "Ninahisi salama na amani wakati mtu maalum ananigusa.",
-                                //         "Matendo ya huduma kwangu hunifanya nihisi kupendwa."
-                                //         ],
-                                //         "points": [
-                                //           "E",
-                                //           "D"
-                                //           ],
-                                //         },
-                                //         {
-                                //           "question": "Kati ya chaguo hizo mbili, chagua chaguo unalopendelea zaidi na inakufaa vyema kwa sasa.",
-                                //           "answers": [
-                                //           "Ninathamini mambo mengi ambayo watu maalum hunifanyia..",
-                                //           "Ninapenda kupokea zawadi ambazo watu maalum hunitengenezea."
-                                //           ],
-                                //           "points": [
-                                //             "D",
-                                //             "C"
-                                //             ],
-                                //           },
-
-                                //           {
-                                //             "question": "Kati ya chaguo hizo mbili, chagua chaguo unalopendelea zaidi na inakufaa vyema kwa sasa.",
-                                //             "answers": [
-                                //             "Ninafurahia sana hisia ninazopata wakati mtu fulani ananipa (attention).",
-                                //             "Ninafurahia sana hisia ninazopata mtu anaponisaidia kufanya maamuzi."
-                                //             ],
-                                //             "points": [
-                                //               "B",
-                                //               "D"
-                                //               ],
-                                //             },
-
-                                //             {
-                                //               "question": "Kati ya chaguo hizo mbili, chagua chaguo unalopendelea zaidi na inakufaa vyema kwa sasa.",
-                                //               "answers": [
-                                //               "Ninahisi kupendwa wakati mtu anasherehekea siku yangu ya kuzaliwa kwa zawadi.",
-                                //               "Ninahisi kupendwa wakati mtu anasherehekea siku yangu ya kuzaliwa kwa maneno yenye maana."
-                                //               ],
-                                //               "points": [
-                                //                 "C",
-                                //                 "A"
-                                //                 ],
-                                //               },
-
-                                //               {
-                                //                 "question": "Kati ya chaguo hizo mbili, chagua chaguo unalopendelea zaidi na inakufaa vyema kwa sasa.",
-                                //                 "answers": [
-                                //                 "Najua mtu ananifikiria anaponipa zawadi.",
-                                //                 "Ninahisi kupendwa wakati mtu ananisaidia kufanya kazi zangu"
-                                //                 ],
-                                //                 "points": [
-                                //                   "C",
-                                //                   "D"
-                                //                   ],
-                                //                 },
-                                //                 {
-                                //                   "question": "Kati ya chaguo hizo mbili, chagua chaguo unalopendelea zaidi na inakufaa vyema kwa sasa.",
-                                //                   "answers": [
-                                //                   "Ninathamini mtu anaposikiliza kwa subira na asinikatishe.",
-                                //                   "Ninashukuru wakati mtu anakumbuka siku maalum na zawadi."
-                                //                   ],
-                                //                   "points": [
-                                //                     "B",
-                                //                     "C"
-                                //                     ],
-                                //                   },
-                                //                   {
-                                //                     "question": "Kati ya chaguo hizo mbili, chagua chaguo unalopendelea zaidi na inakufaa vyema kwa sasa.",
-                                //                     "answers": [
-                                //                     "Ninapenda kujua wapendwa wanajali vya kutosha kunisaidia na kazi zangu za kila siku.",
-                                //                     "Ninafurahia safari ndefu na mtu ambaye ni maalum kwangu."
-                                //                     ],
-                                //                     "points": [
-                                //                       "D",
-                                //                       "B"
-                                //                       ],
-                                //                     },
-                                //                     {
-                                //                       "question": "Kati ya chaguo hizo mbili, chagua chaguo unalopendelea zaidi na inakufaa vyema kwa sasa.",
-                                //                       "answers": [
-                                //                       "Ninafurahia kumbusu au busu na watu ambao niko nao karibu.",
-                                //                       "Ninafurahia kupokea zawadi bila sababu maalum."
-                                //                       ],
-                                //                       "points": [
-                                //                         "E",
-                                //                         "C"
-                                //                         ],
-                                //                       },
-                                //                       {
-                                //                         "question": "Kati ya chaguo hizo mbili, chagua chaguo unalopendelea zaidi na inakufaa vyema kwa sasa.",
-                                //                         "answers": [
-                                //                         "Ninapenda kuambiwa kwamba ninathaminiwa.",
-                                //                         "Ninapenda mtu aniangalie wakati tunazungumza."
-                                //                         ],
-                                //                         "points": [
-                                //                           "A",
-                                //                           "B"
-                                //                           ],
-                                //                         },
-                                //                         {
-                                //                           "question": "Kati ya chaguo hizo mbili, chagua chaguo unalopendelea zaidi na inakufaa vyema kwa sasa.",
-                                //                           "answers": [
-                                //                           "Zawadi kutoka kwa rafiki au mpendwa daima ni maalum kwangu.",
-                                //                           "Ninahisi vizuri wakati rafiki au mpendwa ananigusa."
-                                //                           ],
-                                //                           "points": [
-                                //                             "C",
-                                //                             "E"
-                                //                             ],
-                                //                           },
-
-                                //                           {
-                                //                             "question": "Kati ya chaguo hizo mbili, chagua chaguo unalopendelea zaidi na inakufaa vyema kwa sasa.",
-                                //                             "answers": [
-                                //                             "Ninahisi kupendwa wakati mtu anafanya kazi fulani ambayo nimeomba kwa shauku..",
-                                //                             "Ninahisi kupendwa ninapoambiwa ni kiasi gani nahitajika."
-                                //                             ],
-                                //                             "points": [
-                                //                               "D",
-                                //                               "A"
-                                //                               ],
-                                //                             },
-
-                                //                             {
-                                //                               "question": "Kati ya chaguo hizo mbili, chagua chaguo unalopendelea zaidi na inakufaa vyema kwa sasa.",
-                                //                               "answers": [
-                                //                               "Ninahitaji kuguswa kila siku.",
-                                //                               "Nahitaji maneno ya kutia moyo kila siku.."
-                                //                               ],
-                                //                               "points": [
-                                //                                 "E",
-                                //                                 "A"
-                                //                                 ],
-                                //                               },
+                
     ]
 
 const startQuiz = () => {
@@ -473,17 +250,7 @@ const checkAnswer = () => {
     // console.log(questions[currentQuestion - 1]);
     var indexPoints=questions[currentQuestion - 1].answers.indexOf(answer)
     var point = questions[currentQuestion - 1].points[indexPoints]
-    if(point=="A"){
-      pointA++
-    }else if(point=="B"){
-      pointB++
-    }else if(point=="C"){
-      pointC++
-    }else if(point=="D"){
-      pointD++
-    }else if(point=="E"){
-      pointE++
-    }
+      pointA += point
   } 
   const answersDiv = document.querySelectorAll(".answer");
   answersDiv.forEach((answer) => {
@@ -518,21 +285,21 @@ const showScore = ()  => {
    nextBtn.innerHTML = "Loading...";
   var data= Math.max(pointA,pointB,pointC,pointD,pointE)
   // <button class="btn start">Anza Kipimo</button>
-  if(pointA==data){
-    head= "MANENO YA UTHIBITISHO / WORDS OF AFFIRMATION"
-    comment="Kusikia maneno hayo muhimu ya upendo na shukrani."
-  }else if(pointE==data){
-    head= "KUGUSWA MWILI / PHYSICAL TOUCH"
-    comment=" Mapenzi ya kimwili, mguso, ngono, kukumbatiana, kubembeleza - kuhisi mapenzi kupitia muunganisho wa ngozi hadi ngozi."
-  }else if(pointB==data){
-    head= "MUDAA WAKO / QUALITY TIME"
-    comment="Kutumia muda mwingi tukiwa pekee tu."
-  }else if(pointD==data){
-    head= "MATENDO YA HUDUMA / ACTS OF SERVICE"
-    comment="Kukuisaidia na kazi zako, kukuchukua kutoka kwa madaktari, kukutengenezea kahawa asubuhi, kuonyesha upendo kupitia vitendo."
-  }else if(pointC==data){
-    head= "KUPOKEA ZAWADI / RECEIVING GIFTS"
-    comment="Mapenzi ya kupewa zawadi, haijalishi bei."
+  if(pointA>=90 ){
+    head= "PORSHE"
+    comment="5 Star out of 5."
+  }else if(pointA>=80){
+    head= "RANGE"
+    comment="4 Stars out of 5"
+  }else if(pointA>=60){
+    head= "VANGURD"
+    comment="3 Stars out of 5"
+  }else if(pointA>=45){
+    head= "VITZ"
+    comment="2 Star out of 5"
+  }else if(pointA>=35){
+    head= "BAJAJI"
+    comment="1 Star out of 5"
   } 
   window.localStorage.setItem("head",head)
   window.localStorage.setItem("comment",comment)
